@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Giants Dashboard</title>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-inner">
+            <div class="title-block">
+                <span class="tag">MARKET INTELLIGENCE</span>
+                <h1>Tech Giants<br><span>Dashboard</span></h1>
+                <p class="subtitle">Revenue · Workforce · R&D · Market Cap · 2020–2024</p>
+            </div>
+            <div class="filter-block">
+                <label>FILTER BY YEAR</label>
+                <select id="yearSelect"><option value="all">All Years (Average)</option></select>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="grid">
+            <div class="chart-card">
+                <div class="chart-label">Revenue (USD Million)</div>
+                <div id="revenueChart" class="chart-area"></div>
+            </div>
+            <div class="chart-card">
+                <div class="chart-label">Workforce Size</div>
+                <div id="employeesChart" class="chart-area"></div>
+            </div>
+            <div class="chart-card">
+                <div class="chart-label">R&D Spending (USD Million)</div>
+                <div id="rndChart" class="chart-area"></div>
+            </div>
+            <div class="chart-card">
+                <div class="chart-label">Market Capitalization (USD Million)</div>
+                <div id="marketCapChart" class="chart-area"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
